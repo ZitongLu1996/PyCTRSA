@@ -68,7 +68,7 @@ def ctrdm_cal(data, time_win=10, time_step=5):
                         r = pearsonr(data_for_cal[con1, t1], data_for_cal[con2, t2])[0]
                         ctrdms[t1, t2, con1, con2] = 1-r
                     if con1 == con2:
-                        ctrdms[t1, t2, con1, con2] = 1
+                        ctrdms[t1, t2, con1, con2] = 0
 
     return ctrdms
 
