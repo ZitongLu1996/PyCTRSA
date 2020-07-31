@@ -10,12 +10,13 @@
 ' a module for calculating Cross-Temporal Similarities between CTRDMs and a Coding Model RDM '
 
 import numpy as np
+from pyctrsa.util.progressbar import show_progressbar
 from pyctrsa.similarity import spearmanrp, pearsonrp, kendallrp, cosinesimilarity, euclideandistance
 
 
 ' a function for calculating Cross-Temporal Similarities between CTRDMs and a Coding Model RDM '
 
-def ctsimilarities_cal(CTRDMs, Model_RDM, method='spearman', fisherz=True):
+def ctsimilarities_cal(CTRDMs, Model_RDM, method='spearman'):
 
     """
     Calculate the Cross-Temporal Similarities between CTRDMs and a Coding Model RDM
@@ -35,9 +36,6 @@ def ctsimilarities_cal(CTRDMs, Model_RDM, method='spearman', fisherz=True):
         If method='spearman', calculate the Spearman Correlations. If method='pearson', calculate the Pearson
         Correlations. If methd='kendall', calculate the Kendall tau Correlations. If method='similarity', calculate the
         Cosine Similarities. If method='distance', calculate the Euclidean Distances.
-    fisherz : bool True or False. Default is False.
-        Do the Fisher-Z transform of the CTRDMs or not.
-        Only when method='spearman' or 'pearson' or 'kendall', it works.
 
     Returns
     -------
@@ -76,15 +74,20 @@ def ctsimilarities_cal(CTRDMs, Model_RDM, method='spearman', fisherz=True):
 
         CTSimilarities = np.zeros([n_ts, n_ts, 2], dtype=np.float)
 
+        total = n_ts * n_ts
+
         for t1 in range(n_ts):
             for t2 in range(n_ts):
 
+                percent = (t1 * n_ts + t2) / total * 100
+                show_progressbar("Calculating", percent)
+
                 if method == 'spearman':
-                    CTSimilarities[t1, t2] = spearmanrp.spearmanrp_cal(CTRDMs[t1, t2], Model_RDM, fisherz=fisherz)
+                    CTSimilarities[t1, t2] = spearmanrp.spearmanrp_cal(CTRDMs[t1, t2], Model_RDM)
                 if method == 'pearson':
-                    CTSimilarities[t1, t2] = pearsonrp.pearsonrp_cal(CTRDMs[t1, t2], Model_RDM, fisherz=fisherz)
+                    CTSimilarities[t1, t2] = pearsonrp.pearsonrp_cal(CTRDMs[t1, t2], Model_RDM)
                 if method == 'kendall':
-                    CTSimilarities[t1, t2] = kendallrp.kendallrp_cal(CTRDMs[t1, t2], Model_RDM, fisherz=fisherz)
+                    CTSimilarities[t1, t2] = kendallrp.kendallrp_cal(CTRDMs[t1, t2], Model_RDM)
                 if method == 'similarity':
                     CTSimilarities[t1, t2, 0] = cosinesimilarity.cosinesimilarity_cal(CTRDMs[t1, t2], Model_RDM)
                 if method == 'distance':
@@ -105,16 +108,22 @@ def ctsimilarities_cal(CTRDMs, Model_RDM, method='spearman', fisherz=True):
 
         CTSimilarities = np.zeros([n1, n_ts, n_ts, 2], dtype=np.float)
 
+        total = n1 * n_ts * n_ts
+
         for i in range(n1):
             for t1 in range(n_ts):
                 for t2 in range(n_ts):
 
+                    percent = (i * n_ts * n_ts + t1 * n_ts + t2) / total * 100
+                    show_progressbar("Calculating", percent)
+
                     if method == 'spearman':
-                        CTSimilarities[i, t1, t2] = spearmanrp.spearmanrp_cal(CTRDMs[i, t1, t2], Model_RDM, fisherz=fisherz)
+                        CTSimilarities[i, t1, t2] = spearmanrp.spearmanrp_cal(CTRDMs[i, t1, t2], Model_RDM)
+                        #print(CTSimilarities[i, t1, t2])
                     if method == 'pearson':
-                        CTSimilarities[i, t1, t2] = pearsonrp.pearsonrp_cal(CTRDMs[i, t1, t2], Model_RDM, fisherz=fisherz)
+                        CTSimilarities[i, t1, t2] = pearsonrp.pearsonrp_cal(CTRDMs[i, t1, t2], Model_RDM)
                     if method == 'kendall':
-                        CTSimilarities[i, t1, t2] = kendallrp.kendallrp_cal(CTRDMs[i, t1, t2], Model_RDM, fisherz=fisherz)
+                        CTSimilarities[i, t1, t2] = kendallrp.kendallrp_cal(CTRDMs[i, t1, t2], Model_RDM)
                     if method == 'similarity':
                         CTSimilarities[i, t1, t2, 0] = cosinesimilarity.cosinesimilarity_cal(CTRDMs[i, t1, t2], Model_RDM)
                     if method == 'distance':
@@ -133,17 +142,22 @@ def ctsimilarities_cal(CTRDMs, Model_RDM, method='spearman', fisherz=True):
 
         CTSimilarities = np.zeros([n1, n2, n_ts, n_ts, 2], dtype=np.float)
 
+        total = n1 * n2 * n_ts * n_ts
+
         for i in range(n1):
             for j in range(n2):
                 for t1 in range(n_ts):
                     for t2 in range(n_ts):
 
+                        percent = (i * n2 * n_ts * n_ts + j * n_ts * n_ts + t1 * n_ts + t2) / total * 100
+                        show_progressbar("Calculating", percent)
+
                         if method == 'spearman':
-                            CTSimilarities[i, j, t1, t2] = spearmanrp.spearmanrp_cal(CTRDMs[i, j, t1, t2], Model_RDM, fisherz=fisherz)
+                            CTSimilarities[i, j, t1, t2] = spearmanrp.spearmanrp_cal(CTRDMs[i, j, t1, t2], Model_RDM)
                         if method == 'pearson':
-                            CTSimilarities[i, j, t1, t2] = pearsonrp.pearsonrp_cal(CTRDMs[i, j, t1, t2], Model_RDM, fisherz=fisherz)
+                            CTSimilarities[i, j, t1, t2] = pearsonrp.pearsonrp_cal(CTRDMs[i, j, t1, t2], Model_RDM)
                         if method == 'kendall':
-                            CTSimilarities[i, j, t1, t2] = kendallrp.kendallrp_cal(CTRDMs[i, j, t1, t2], Model_RDM, fisherz=fisherz)
+                            CTSimilarities[i, j, t1, t2] = kendallrp.kendallrp_cal(CTRDMs[i, j, t1, t2], Model_RDM)
                         if method == 'similarity':
                             CTSimilarities[i, j, t1, t2, 0] = cosinesimilarity.cosinesimilarity_cal(CTRDMs[i, j, t1, t2], Model_RDM)
                         if method == 'distance':

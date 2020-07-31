@@ -10,7 +10,9 @@
 ' a module for calculating Cross-Temporal RDMs for multi-channels data '
 
 import numpy as np
+from pyctrsa.util.progressbar import show_progressbar
 from pyctrsa.ctrdm import single_cal
+from scipy.stats import pearsonr
 
 np.seterr(divide='ignore', invalid='ignore')
 
@@ -56,15 +58,34 @@ def ctrdms_cal(data, sub_opt=1, chl_opt=1, time_win=10, time_step=5):
     # chl_opt=0
     if chl_opt == 0:
 
-        data = np.average(data, axis=2)
+        data_for_cal = np.zeros([n_cons, n_subs, nts, n_chls, time_win], dtype=np.float)
+
+        for con in range(n_cons):
+            for sub in range(n_subs):
+                for t in range(nts):
+                    for chl in range(n_chls):
+                        data_for_cal[con, sub, t, chl] = data[con, sub, chl, t * time_step:t * time_step + time_win]
+
+        data_for_cal = np.reshape(data_for_cal, [n_cons, n_subs, nts, n_chls*time_win])
 
         ctrdms = np.zeros([n_subs, nts, nts, n_cons, n_cons], dtype=np.float)
 
+        total = n_subs * nts * nts
+
         for sub in range(n_subs):
+            for t1 in range(nts):
+                for t2 in range(nts):
+                    percent = (sub * nts * nts + t1 * nts + t2) / total * 100
+                    show_progressbar("Calculating", percent)
 
-            print("\nSubject "+str(sub+1)+":")
+                    for con1 in range(n_cons):
+                        for con2 in range(n_cons):
 
-            ctrdms[sub] = single_cal.ctrdm_cal(data[:, sub], time_win=time_win, time_step=time_step)
+                            if con1 != con2:
+                                r = pearsonr(data_for_cal[con1, sub, t1], data_for_cal[con2, sub, t2])[0]
+                                ctrdms[sub, t1, t2, con1, con2] = 1 - r
+                            if con1 == con2:
+                                ctrdms[sub, t1, t2, con1, con2] = 0
 
         # chl_opt=0 & sub_opt=0
         if sub_opt == 0:

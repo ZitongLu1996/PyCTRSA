@@ -16,7 +16,7 @@ from scipy.stats import spearmanr
 
 ' a function for calculating the similarity based on Spearman Correlation Coefficient between two CTRDMs '
 
-def spearmanrp_cal(CTRDM1, CTRDM2, fisherz=False):
+def spearmanrp_cal(CTRDM1, CTRDM2):
     """
     Calculate the similarity based on Spearman Correlation Coefficient between two CTRDMs
 
@@ -26,8 +26,6 @@ def spearmanrp_cal(CTRDM1, CTRDM2, fisherz=False):
         The Cross-Temporal RDM 1.
     CTRDM2 : array [n_conditions, n_conditions]
         The Cross-Temporal RDM 2.
-    fisherz : bool True or False. Default is False.
-        Do the Fisher-Z transform of the CTRDMs or not.
 
     Returns
     -------
@@ -41,10 +39,6 @@ def spearmanrp_cal(CTRDM1, CTRDM2, fisherz=False):
 
     # calculate the number of value above the diagonal in RDM
     n = n_cons * (n_cons - 1)
-
-    if fisherz == True:
-        CTRDM1 = fisherz_rdm(CTRDM1)
-        CTRDM2 = fisherz_rdm(CTRDM2)
 
     # initialize two vectors to store the values above the diagnal of two RDMs
     v1 = np.zeros([n], dtype=np.float64)
@@ -63,3 +57,8 @@ def spearmanrp_cal(CTRDM1, CTRDM2, fisherz=False):
     rp = np.array(spearmanr(v1, v2))
 
     return rp
+
+#r1 = np.random.rand(6, 6)
+#r2 = np.random.rand(6, 6)
+#a = spearmanrp_cal(r1, r2, fisherz=True)
+#print(a)
