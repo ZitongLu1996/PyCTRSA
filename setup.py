@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pyctrsa',
-    version='0.0.2',
+    version='0.0.3',
     description=(
         'AA Python Toolbox for Cross-Temporal Representational Similarity Analysis-based Decoding on E/MEG Data'
     ),

@@ -26,7 +26,7 @@ filepath = data_dir + filename
 
 """  Section 1: Download Data  """
 
-"""exist = os.path.exists(filepath)
+exist = os.path.exists(filepath)
 if exist == False:
     os.makedirs(data_dir)
     urllib.request.urlretrieve(url, filepath, schedule)
@@ -34,7 +34,7 @@ if exist == False:
 elif exist == True:
     print('Data already exists!')
 
-unzipfile(filepath, data_dir)"""
+unzipfile(filepath, data_dir)
 
 
 """  Section 2: Data preprocessing for further calculation  """
@@ -50,7 +50,7 @@ pre_data(subs, data_dir)
 # calculate the CTRDMs for a single channel & a single subject
 
 # here we choose the ERP position data of 1st channel of sub201, firstly
-f = h5py.File(data_dir+'data_for_CTRSA/ERP/201.h5', 'r')
+"""f = h5py.File(data_dir+'data_for_CTRSA/ERP/201.h5', 'r')
 data_pos_ERP_sub201chl1 = np.array(f['pos'])[:, :, 0]
 f.close()
 
@@ -68,7 +68,7 @@ f.close()
 # plot one of the CTRDMs (time 1: 10 ms, time 2: 30 ms, the time of stimulus onset is 0 ms)
 conditions = ["0°", "22.5°", "45°", "67.5°", "90°", "112.5°", "135°", "157.5°", "180°",
               "202.5°", "225°", "247.5°", "270°", "292.5°", "315°", "337.5°"]
-ctrdm.ctrdm_plot(CTRDM_pos_ERP_sub201chl1[30, 40])
+ctrdm.ctrdm_plot(CTRDM_pos_ERP_sub201chl1[30, 40])"""
 
 
 # calculate the CTRDMs for all channels & subjects
@@ -85,10 +85,11 @@ for sub in subs:
     data_pos_ERP[:, subindex] = ori_subdata
 
 # calculate the CTRDMs
+data_pos_ERP = np.average(data_pos_ERP, axis=2)
 CTRDM_pos_ERP = multi_cal.ctrdms_cal(data_pos_ERP, sub_opt=1, chl_opt=0, time_win=5, time_step=5)
 
 # save the CTRDMs
-f = h5py.File('test_resutls/CTRDM_pos_ERP.h5', 'w')
+f = h5py.File('test_resutls/CTRDM_pos_ERP1.h5', 'w')
 f.create_dataset('CTRDMs', data=CTRDM_pos_ERP)
 f.close()
 
