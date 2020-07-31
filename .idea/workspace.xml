@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2383ab4-1816-4649-acb6-030e0919c134" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pyctrsa/ctrdm/multi_cal.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyctrsa/ctrdm/multi_cal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyctrsa/ctsimilarity/fitctrdm.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyctrsa/ctsimilarity/fitctrdm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyctrsa/similarity/kendallrp.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyctrsa/similarity/kendallrp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyctrsa/similarity/pearsonrp.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyctrsa/similarity/pearsonrp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyctrsa/similarity/spearmanrp.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyctrsa/similarity/spearmanrp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Tutorial_for_PyCTRSA.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Tutorial_for_PyCTRSA.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test01.py" beforeDir="false" />
-    </list>
+    <list default="true" id="e2383ab4-1816-4649-acb6-030e0919c134" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -343,12 +334,12 @@
       <workItem from="1596183679524" duration="8736000" />
       <workItem from="1596198190761" duration="3763000" />
       <workItem from="1596207262454" duration="2155000" />
-      <workItem from="1596212977007" duration="5798000" />
+      <workItem from="1596212977007" duration="6032000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20452000" />
+    <option name="totallyTimeSpent" value="20686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="31" y="30" width="1245" height="761" extended-state="0" />
@@ -392,13 +383,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/Tutorial_for_PyCTRSA.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pyctrsa/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -509,6 +493,13 @@
           <folding>
             <element signature="e#247#265#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Tutorial_for_PyCTRSA.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
         </state>
       </provider>
     </entry>
