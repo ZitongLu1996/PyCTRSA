@@ -100,7 +100,8 @@ def ctsimilarities_cal(CTRDMs, Model_RDM, method='spearman', fisherz=True):
 
     if n == 5:
 
-        n1, n_ts, n_cons = np.shape(CTRDMs)[2:5]
+        n1 = np.shape(CTRDMs)[0]
+        n_ts, n_cons = np.shape(CTRDMs)[2:4]
 
         CTSimilarities = np.zeros([n1, n_ts, n_ts, 2], dtype=np.float)
 
@@ -127,7 +128,8 @@ def ctsimilarities_cal(CTRDMs, Model_RDM, method='spearman', fisherz=True):
 
     if n == 6:
 
-        n1, n2, n_ts, n_cons = np.shape(CTRDMs)[:4]
+        n1, n2 = np.shape(CTRDMs)[:2]
+        n_ts, n_cons = np.shape(CTRDMs)[3:5]
 
         CTSimilarities = np.zeros([n1, n2, n_ts, n_ts, 2], dtype=np.float)
 

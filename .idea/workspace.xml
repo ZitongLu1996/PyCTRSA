@@ -2,18 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2383ab4-1816-4649-acb6-030e0919c134" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/test01.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyctrsa/ctrdm/multi_cal.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyctrsa/ctrdm/multi_cal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/pyctrsa/ctrdm/multi_cal.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/pyctrsa/ctrdm/multi_cal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/pyctrsa/ctsimilarity/fitctrdm.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/pyctrsa/ctsimilarity/fitctrdm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/pyctrsa/similarity/cosinesimilarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/pyctrsa/similarity/cosinesimilarity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/pyctrsa/similarity/euclideandistance.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/pyctrsa/similarity/euclideandistance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/pyctrsa/similarity/kendallrp.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/pyctrsa/similarity/kendallrp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/pyctrsa/similarity/pearsonrp.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/pyctrsa/similarity/pearsonrp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/pyctrsa/similarity/spearmanrp.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/pyctrsa/similarity/spearmanrp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pyctrsa-0.0.4-py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pyctrsa-0.0.4.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyctrsa.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/pyctrsa.egg-info/PKG-INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyctrsa.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pyctrsa.egg-info/SOURCES.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyctrsa/ctsimilarity/fitctrdm.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyctrsa/ctsimilarity/fitctrdm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyctrsa/similarity/cosinesimilarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyctrsa/similarity/cosinesimilarity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyctrsa/similarity/euclideandistance.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyctrsa/similarity/euclideandistance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyctrsa/similarity/kendallrp.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyctrsa/similarity/kendallrp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyctrsa/similarity/pearsonrp.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyctrsa/similarity/pearsonrp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyctrsa/similarity/spearmanrp.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyctrsa/similarity/spearmanrp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/.ipynb_checkpoints/Tutorial_for_PyCTRSA-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test/.ipynb_checkpoints/Tutorial_for_PyCTRSA-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/Tutorial_for_PyCTRSA.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Tutorial_for_PyCTRSA.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,10 +38,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pyctrsa/ctsimilarity/fitctrdm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="159" column="1" selection-start-line="159" selection-start-column="1" selection-end-line="159" selection-end-column="1" />
+            <state relative-caret-position="87">
+              <caret line="146" column="10" selection-start-line="146" selection-start-column="10" selection-end-line="146" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -55,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/pyctrsa/ctrdm/multi_cal.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="427">
-              <caret line="98" column="25" lean-forward="true" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
+              <caret line="98" column="25" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -64,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/test/test01.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="e#148#157#0" expanded="true" />
               </folding>
@@ -74,7 +87,9 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pyctrsa/plotting/ctrdm.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-51" />
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -102,7 +117,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pyctrsa/ctrdm/single_cal.py" />
-        <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/test/test.py" />
         <option value="$PROJECT_DIR$/pyctrsa/ctrdm/multi_cal.py" />
         <option value="$PROJECT_DIR$/test/test01.py" />
@@ -112,11 +126,13 @@
         <option value="$PROJECT_DIR$/pyctrsa/similarity/pearsonrp.py" />
         <option value="$PROJECT_DIR$/pyctrsa/similarity/spearmanrp.py" />
         <option value="$PROJECT_DIR$/pyctrsa/ctsimilarity/fitctrdm.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="34" />
+    <option name="x" value="33" />
+    <option name="y" value="39" />
     <option name="width" value="1245" />
     <option name="height" value="761" />
   </component>
@@ -340,22 +356,23 @@
       <updated>1596183677488</updated>
       <workItem from="1596183679524" duration="8736000" />
       <workItem from="1596198190761" duration="3763000" />
-      <workItem from="1596207262454" duration="1124000" />
+      <workItem from="1596207262454" duration="2155000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13623000" />
+    <option name="totallyTimeSpent" value="14654000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="34" width="1245" height="761" extended-state="0" />
+    <frame x="-39" y="82" width="1245" height="761" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25852036" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32884902" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32884902" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -405,13 +422,6 @@
     <entry file="file://$PROJECT_DIR$/pyctrsa/ctsimilarity/normalrdmbased.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -443,9 +453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pyctrsa/plotting/ctrdm.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/pyctrsa/util/preprocess_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
@@ -456,14 +463,14 @@
     <entry file="file://$PROJECT_DIR$/pyctrsa/ctrdm/multi_cal.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
-          <caret line="98" column="25" lean-forward="true" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
+          <caret line="98" column="25" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="e#148#157#0" expanded="true" />
           </folding>
@@ -505,10 +512,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pyctrsa/plotting/ctrdm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pyctrsa/ctsimilarity/fitctrdm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="159" column="1" selection-start-line="159" selection-start-column="1" selection-end-line="159" selection-end-column="1" />
+        <state relative-caret-position="87">
+          <caret line="146" column="10" selection-start-line="146" selection-start-column="10" selection-end-line="146" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
         </state>
       </provider>
     </entry>
