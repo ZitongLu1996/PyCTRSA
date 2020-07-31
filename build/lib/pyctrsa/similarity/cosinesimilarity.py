@@ -1,24 +1,22 @@
 # -*- coding: utf-8
 
 """
-@File       :   kendallrp.py
+@File       :   cosinesimilarity.py
 @Author     :   Zitong Lu
 @Contact    :   zitonglu1996@gmail.com
 @License    :   MIT License
 """
 
-' a module for calculating the similarity based on Kendalls tau Correlation Coefficient between two CTRDMs '
+' a module for calculating the similarity based on Cosine Similarity between two CTRDMs '
 
 import numpy as np
-from neurora.stuff import fisherz_rdm
-from scipy.stats import kendalltau
 
 
-' a function for calculating the similarity based on Kendalls tau Correlation Coefficient between two CTRDMs '
+' a function for calculating the similarity based on Cosine Similarity between two CTRDMs '
 
-def kendallrp_cal(CTRDM1, CTRDM2, fisherz=False):
+def spearmanrp_cal(CTRDM1, CTRDM2):
     """
-    Calculate the similarity based on Kendalls tau Correlation Coefficient between two CTRDMs
+    Calculate the similarity based on Cosine Similarity between two CTRDMs
 
     Parameters
     ----------
@@ -26,25 +24,19 @@ def kendallrp_cal(CTRDM1, CTRDM2, fisherz=False):
         The Cross-Temporal RDM 1.
     CTRDM2 : array [n_conditions, n_conditions]
         The Cross-Temporal RDM 2.
-    fisherz : bool True or False. Default is False.
-        Do the Fisher-Z transform of the CTRDMs or not.
 
     Returns
     -------
-    rp : float, float
-        Kendalls tau's correlation coefficient
-        A r-value and a p-value.
+    similarity : float
+        Cosine Similarity.
     """
 
     # get number of conditions
     n_cons = np.shape(CTRDM1)[0]
+    print(n_cons)
 
     # calculate the number of value above the diagonal in RDM
     n = n_cons * (n_cons - 1)
-
-    if fisherz == True:
-        CTRDM1 = fisherz_rdm(CTRDM1)
-        CTRDM2 = fisherz_rdm(CTRDM2)
 
     # initialize two vectors to store the values above the diagnal of two RDMs
     v1 = np.zeros([n], dtype=np.float64)
@@ -59,7 +51,15 @@ def kendallrp_cal(CTRDM1, CTRDM2, fisherz=False):
                 v2[nn] = CTRDM2[i, j]
                 nn = nn + 1
 
-    # calculate the Kendalls tau Correlation
-    rp = np.array(kendalltau(v1, v2))
+    print(v1)
+    print(v2)
 
-    return rp
+    # calculate the Cosine Similarity
+    V1 = np.mat(v1)
+    V2 = np.mat(v2)
+    num = float(V1 * V2.T)
+    denom = np.linalg.norm(V1) * np.linalg.norm(V2)
+    cos = num / denom
+    similarity = 0.5 + 0.5 * cos
+
+    return similarity

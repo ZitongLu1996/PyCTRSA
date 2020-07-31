@@ -1,24 +1,24 @@
 # -*- coding: utf-8
 
 """
-@File       :   kendallrp.py
+@File       :   spearmanrp.py
 @Author     :   Zitong Lu
 @Contact    :   zitonglu1996@gmail.com
 @License    :   MIT License
 """
 
-' a module for calculating the similarity based on Kendalls tau Correlation Coefficient between two CTRDMs '
+' a module for calculating the similarity based on Spearman Correlation Coefficient between two CTRDMs '
 
 import numpy as np
 from neurora.stuff import fisherz_rdm
-from scipy.stats import kendalltau
+from scipy.stats import spearmanr
 
 
-' a function for calculating the similarity based on Kendalls tau Correlation Coefficient between two CTRDMs '
+' a function for calculating the similarity based on Spearman Correlation Coefficient between two CTRDMs '
 
-def kendallrp_cal(CTRDM1, CTRDM2, fisherz=False):
+def spearmanrp_cal(CTRDM1, CTRDM2, fisherz=False):
     """
-    Calculate the similarity based on Kendalls tau Correlation Coefficient between two CTRDMs
+    Calculate the similarity based on Spearman Correlation Coefficient between two CTRDMs
 
     Parameters
     ----------
@@ -32,12 +32,13 @@ def kendallrp_cal(CTRDM1, CTRDM2, fisherz=False):
     Returns
     -------
     rp : float, float
-        Kendalls tau's correlation coefficient
+        Spearman's correlation coefficient
         A r-value and a p-value.
     """
 
     # get number of conditions
     n_cons = np.shape(CTRDM1)[0]
+    print(n_cons)
 
     # calculate the number of value above the diagonal in RDM
     n = n_cons * (n_cons - 1)
@@ -59,7 +60,10 @@ def kendallrp_cal(CTRDM1, CTRDM2, fisherz=False):
                 v2[nn] = CTRDM2[i, j]
                 nn = nn + 1
 
-    # calculate the Kendalls tau Correlation
-    rp = np.array(kendalltau(v1, v2))
+    print(v1)
+    print(v2)
+
+    # calculate the Spearman Correlation
+    rp = np.array(spearmanr(v1, v2))
 
     return rp

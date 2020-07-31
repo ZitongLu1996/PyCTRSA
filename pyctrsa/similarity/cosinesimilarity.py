@@ -14,7 +14,7 @@ import numpy as np
 
 ' a function for calculating the similarity based on Cosine Similarity between two CTRDMs '
 
-def spearmanrp_cal(CTRDM1, CTRDM2):
+def cosinesimilarity_cal(CTRDM1, CTRDM2):
     """
     Calculate the similarity based on Cosine Similarity between two CTRDMs
 
@@ -33,7 +33,6 @@ def spearmanrp_cal(CTRDM1, CTRDM2):
 
     # get number of conditions
     n_cons = np.shape(CTRDM1)[0]
-    print(n_cons)
 
     # calculate the number of value above the diagonal in RDM
     n = n_cons * (n_cons - 1)
@@ -50,9 +49,6 @@ def spearmanrp_cal(CTRDM1, CTRDM2):
                 v1[nn] = CTRDM1[i, j]
                 v2[nn] = CTRDM2[i, j]
                 nn = nn + 1
-
-    print(v1)
-    print(v2)
 
     # calculate the Cosine Similarity
     V1 = np.mat(v1)

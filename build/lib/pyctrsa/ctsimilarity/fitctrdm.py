@@ -70,7 +70,7 @@ def ctsimilarities_cal(CTRDMs, Model_RDM, method='spearman', fisherz=True):
 
     n = len(np.shape(CTRDMs))
 
-    if n == 4:
+    if n == 3:
 
         n_ts, n_cons = np.shape(CTRDMs)[1:3]
 
@@ -80,15 +80,15 @@ def ctsimilarities_cal(CTRDMs, Model_RDM, method='spearman', fisherz=True):
             for t2 in range(n_ts):
 
                 if method == 'spearman':
-                    CTSimilarities[t1, t2] = spearmanrp.spearmanrp_cal(CTRDMs[t1, t2], Model_RDM, fisherz=fisherz)
+                    CTSimilarities[t1, t2] = spearmanrp(CTRDMs[t1, t2], Model_RDM, fisherz=fisherz)
                 if method == 'pearson':
-                    CTSimilarities[t1, t2] = pearsonrp.pearsonrp_cal(CTRDMs[t1, t2], Model_RDM, fisherz=fisherz)
+                    CTSimilarities[t1, t2] = pearsonrp(CTRDMs[t1, t2], Model_RDM, fisherz=fisherz)
                 if method == 'kendall':
-                    CTSimilarities[t1, t2] = kendallrp.kendallrp_cal(CTRDMs[t1, t2], Model_RDM, fisherz=fisherz)
+                    CTSimilarities[t1, t2] = kendallrp(CTRDMs[t1, t2], Model_RDM, fisherz=fisherz)
                 if method == 'similarity':
-                    CTSimilarities[t1, t2, 0] = cosinesimilarity.cosinesimilarity_cal(CTRDMs[t1, t2], Model_RDM)
+                    CTSimilarities[t1, t2, 0] = cosinesimilarity(CTRDMs[t1, t2], Model_RDM)
                 if method == 'distance':
-                    CTSimilarities[t1, t2, 0] = euclideandistance.euclideandistance_cal(CTRDMs[t1, t2], Model_RDM)
+                    CTSimilarities[t1, t2, 0] = euclideandistance(CTRDMs[t1, t2], Model_RDM)
 
         if method == 'spearman' or method == 'pearson' or method == 'kendall':
 
@@ -98,9 +98,9 @@ def ctsimilarities_cal(CTRDMs, Model_RDM, method='spearman', fisherz=True):
 
             return CTSimilarities[:, :, 0]
 
-    if n == 5:
+    if n == 4:
 
-        n1, n_ts, n_cons = np.shape(CTRDMs)[2:5]
+        n1, n_ts, n_cons = np.shape(CTRDMs)[2:4]
 
         CTSimilarities = np.zeros([n1, n_ts, n_ts, 2], dtype=np.float)
 
@@ -109,15 +109,15 @@ def ctsimilarities_cal(CTRDMs, Model_RDM, method='spearman', fisherz=True):
                 for t2 in range(n_ts):
 
                     if method == 'spearman':
-                        CTSimilarities[i, t1, t2] = spearmanrp.spearmanrp_cal(CTRDMs[i, t1, t2], Model_RDM, fisherz=fisherz)
+                        CTSimilarities[i, t1, t2] = spearmanrp(CTRDMs[i, t1, t2], Model_RDM, fisherz=fisherz)
                     if method == 'pearson':
-                        CTSimilarities[i, t1, t2] = pearsonrp.pearsonrp_cal(CTRDMs[i, t1, t2], Model_RDM, fisherz=fisherz)
+                        CTSimilarities[i, t1, t2] = pearsonrp(CTRDMs[i, t1, t2], Model_RDM, fisherz=fisherz)
                     if method == 'kendall':
-                        CTSimilarities[i, t1, t2] = kendallrp.kendallrp_cal(CTRDMs[i, t1, t2], Model_RDM, fisherz=fisherz)
+                        CTSimilarities[i, t1, t2] = kendallrp(CTRDMs[i, t1, t2], Model_RDM, fisherz=fisherz)
                     if method == 'similarity':
-                        CTSimilarities[i, t1, t2, 0] = cosinesimilarity.cosinesimilarity_cal(CTRDMs[i, t1, t2], Model_RDM)
+                        CTSimilarities[i, t1, t2, 0] = cosinesimilarity(CTRDMs[i, t1, t2], Model_RDM)
                     if method == 'distance':
-                        CTSimilarities[i, t1, t2, 0] = euclideandistance.euclideandistance_cal(CTRDMs[i, t1, t2], Model_RDM)
+                        CTSimilarities[i, t1, t2, 0] = euclideandistance(CTRDMs[i, t1, t2], Model_RDM)
 
         if method == 'spearman' or method == 'pearson' or method == 'kendall':
             return CTSimilarities
@@ -125,7 +125,7 @@ def ctsimilarities_cal(CTRDMs, Model_RDM, method='spearman', fisherz=True):
         if method == 'similarity' or method == 'distance':
             return CTSimilarities[:, :, :, 0]
 
-    if n == 6:
+    if n == 5:
 
         n1, n2, n_ts, n_cons = np.shape(CTRDMs)[:4]
 
@@ -137,24 +137,18 @@ def ctsimilarities_cal(CTRDMs, Model_RDM, method='spearman', fisherz=True):
                     for t2 in range(n_ts):
 
                         if method == 'spearman':
-                            CTSimilarities[i, j, t1, t2] = spearmanrp.spearmanrp_cal(CTRDMs[i, j, t1, t2], Model_RDM, fisherz=fisherz)
+                            CTSimilarities[i, j, t1, t2] = spearmanrp(CTRDMs[i, j, t1, t2], Model_RDM, fisherz=fisherz)
                         if method == 'pearson':
-                            CTSimilarities[i, j, t1, t2] = pearsonrp.pearsonrp_cal(CTRDMs[i, j, t1, t2], Model_RDM, fisherz=fisherz)
+                            CTSimilarities[i, j, t1, t2] = pearsonrp(CTRDMs[i, j, t1, t2], Model_RDM, fisherz=fisherz)
                         if method == 'kendall':
-                            CTSimilarities[i, j, t1, t2] = kendallrp.kendallrp_cal(CTRDMs[i, j, t1, t2], Model_RDM, fisherz=fisherz)
+                            CTSimilarities[i, j, t1, t2] = kendallrp(CTRDMs[i, j, t1, t2], Model_RDM, fisherz=fisherz)
                         if method == 'similarity':
-                            CTSimilarities[i, j, t1, t2, 0] = cosinesimilarity.cosinesimilarity_cal(CTRDMs[i, j, t1, t2], Model_RDM)
+                            CTSimilarities[i, j, t1, t2, 0] = cosinesimilarity(CTRDMs[i, j, t1, t2], Model_RDM)
                         if method == 'distance':
-                            CTSimilarities[i, j, t1, t2, 0] = euclideandistance.euclideandistance_cal(CTRDMs[i, j, t1, t2], Model_RDM)
+                            CTSimilarities[i, j, t1, t2, 0] = euclideandistance(CTRDMs[i, j, t1, t2], Model_RDM)
 
         if method == 'spearman' or method == 'pearson' or method == 'kendall':
             return CTSimilarities
 
         if method == 'similarity' or method == 'distance':
             return CTSimilarities[:, :, :, :, 0]
-
-# test codes
-#a = np.random.rand(100, 100, 6, 6)
-#c = np.random.rand(6, 6)
-#b = ctsimilarities_cal(a, c)
-#print(b)

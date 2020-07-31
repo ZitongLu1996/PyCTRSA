@@ -99,8 +99,8 @@ def ctrdms_cal(data, sub_opt=1, chl_opt=1, time_win=10, time_step=5):
             return ctrdms
 
 # test
-#data = np.random.rand(16, 40, 5, 50)
-#from pyctrsa.plotting import ctrdm
-#ctrdms = ctrdms_cal(data, sub_opt=1, chl_opt=0)
-#ctrdms = np.average(ctrdms, axis=0)
-#ctrdm.ctrdm_plot(ctrdms[1, 3])
+"""data = np.random.rand(10, 10, 20, 50)
+from pyctrsa.plotting import ctrdm
+ctrdms = ctrdms_cal(data, sub_opt=1, chl_opt=0)
+ctrdms = np.average(ctrdms, axis=0)
+ctrdm.ctrdm_plot(ctrdms[1, 3])"""

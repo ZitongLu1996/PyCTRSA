@@ -14,7 +14,7 @@ import numpy as np
 
 ' a function for calculating the similarity based on Euclidean Distance between two CTRDMs '
 
-def spearmanrp_cal(CTRDM1, CTRDM2):
+def euclideandistance_cal(CTRDM1, CTRDM2):
     """
     Calculate the similarity based on Euclidean Distance between two CTRDMs
 
@@ -33,7 +33,6 @@ def spearmanrp_cal(CTRDM1, CTRDM2):
 
     # get number of conditions
     n_cons = np.shape(CTRDM1)[0]
-    print(n_cons)
 
     # calculate the number of value above the diagonal in RDM
     n = n_cons * (n_cons - 1)

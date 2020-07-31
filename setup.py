@@ -2,9 +2,9 @@ from setuptools import setup, find_packages
 
 setup(
     name='pyctrsa',
-    version='0.0.4',
+    version='0.0.5',
     description=(
-        'AA Python Toolbox for Cross-Temporal Representational Similarity Analysis-based Decoding on E/MEG Data'
+        'A Python Toolbox for Cross-Temporal Representational Similarity Analysis-based Decoding on E/MEG Data'
     ),
     long_description=open('README.md').read(),
     author='Zitong Lu',
