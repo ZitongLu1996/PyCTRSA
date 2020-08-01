@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2383ab4-1816-4649-acb6-030e0919c134" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyctrsa/ctsimilarity/normaldatabased.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyctrsa/ctsimilarity/normaldatabased.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyctrsa/plotting/tbytsimilarities.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyctrsa/plotting/tbytsimilarities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/.ipynb_checkpoints/Tutorial_for_PyCTRSA-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test/.ipynb_checkpoints/Tutorial_for_PyCTRSA-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/Tutorial_for_PyCTRSA.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Tutorial_for_PyCTRSA.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +27,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-213">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            <state relative-caret-position="210">
+              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="30">
+                <caret line="2" selection-start-line="2" selection-end-line="2" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -74,7 +84,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pyctrsa/plotting/tbytsimilarities.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1353">
@@ -95,10 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pyctrsa/ctrdm/multi_cal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="1220">
               <caret line="126" column="31" selection-start-line="126" selection-start-column="31" selection-end-line="126" selection-end-column="31" />
               <folding>
                 <element signature="e#226#244#0" expanded="true" />
@@ -143,16 +153,16 @@
         <option value="$PROJECT_DIR$/pyctrsa/similarity/spearmanrp.py" />
         <option value="$PROJECT_DIR$/pyctrsa/ctrdm/multi_cal.py" />
         <option value="$PROJECT_DIR$/pyctrsa/ctsimilarity/fitctrdm.py" />
-        <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/pyctrsa/ctsimilarity/normaldatabased.py" />
         <option value="$PROJECT_DIR$/pyctrsa/plotting/tbytsimilarities.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="31" />
-    <option name="y" value="30" />
-    <option name="width" value="1245" />
+    <option name="x" value="-153" />
+    <option name="y" value="-977" />
+    <option name="width" value="1747" />
     <option name="height" value="761" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -371,18 +381,18 @@
       <workItem from="1596183679524" duration="8736000" />
       <workItem from="1596198190761" duration="3763000" />
       <workItem from="1596207262454" duration="2155000" />
-      <workItem from="1596212977007" duration="7205000" />
+      <workItem from="1596212977007" duration="8192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21859000" />
+    <option name="totallyTimeSpent" value="22846000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="30" width="1245" height="761" extended-state="1" />
+    <frame x="-153" y="-977" width="1747" height="761" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26267666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18533725" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -407,17 +417,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/setup.py</url>
-          <line>9</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pyctrsa/__init__.py">
@@ -487,16 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pyctrsa/ctrdm/multi_cal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="126" column="31" selection-start-line="126" selection-start-column="31" selection-end-line="126" selection-end-column="31" />
-          <folding>
-            <element signature="e#226#244#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pyctrsa/plotting/ctrdm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1458">
@@ -520,13 +509,6 @@
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-213">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -557,6 +539,33 @@
           <caret line="102" column="14" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
           <folding>
             <element signature="e#216#234#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyctrsa/ctrdm/multi_cal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1220">
+          <caret line="126" column="31" selection-start-line="126" selection-start-column="31" selection-end-line="126" selection-end-column="31" />
+          <folding>
+            <element signature="e#226#244#0" expanded="true" />
           </folding>
         </state>
       </provider>
