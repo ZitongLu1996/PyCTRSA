@@ -40,6 +40,9 @@ def tbytsimilarities_plot(CTSimilarities, start_time=0, end_time=1, color='r', l
 
     n = len(np.shape(CTSimilarities))
 
+    minlim = lim[0]
+    maxlim = lim[1]
+
     if n == 4:
         CTSimilarities = CTSimilarities[:, :, :, 0]
 
@@ -77,7 +80,7 @@ def tbytsimilarities_plot(CTSimilarities, start_time=0, end_time=1, color='r', l
     for t in range(nts):
         ps[t] = permutation_test(sim[:, t], chance)
         if ps[t] < 0.05 and avg[t] > 0:
-            plt.plot(t*0.5*tstep+start_time, start_time+(end_time-start_time)*0.9, 's', color=color, alpha=1)
+            plt.plot(t*tstep+start_time, maxlim*0.9, 's', color=color, alpha=1)
             xi = [t*tstep+start_time, t*tstep+tstep+start_time]
             ymin = [0]
             ymax = [avg[t]-err[t]]
@@ -90,11 +93,8 @@ def tbytsimilarities_plot(CTSimilarities, start_time=0, end_time=1, color='r', l
     ax.spines["bottom"].set_linewidth(3)
     ax.spines['bottom'].set_position(('data', 0))
 
-    print(start_time, end_time, tstep)
     x = np.arange(start_time+0.5*tstep, end_time+0.5*tstep, tstep)
-    plt.fill_between(x, avg + err, avg - err, facecolor="orangered", alpha=0.8)
-    minlim = lim[0]
-    maxlim = lim[1]
+    plt.fill_between(x, avg + err, avg - err, facecolor=color, alpha=0.8)
     plt.ylim(minlim, maxlim)
     plt.xlim(start_time, end_time)
     plt.tick_params(labelsize=12)

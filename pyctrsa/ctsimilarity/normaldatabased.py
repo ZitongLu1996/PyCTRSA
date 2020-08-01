@@ -80,17 +80,17 @@ def ctsimilarities_cal(data1, data2, sub_opt=1, chl_opt=1, time_win=10, time_ste
     # chl_opt=0
     if chl_opt == 0:
 
-        data1 = np.average(data1, axis=2)
-        data2 = np.average(data2, axis=2)
-        # shape : [n_subs, n_ts]
-
-        newdata1 = np.zeros([n_subs, nts, time_win], dtype=np.float)
-        newdata2 = np.zeros([n_subs, nts, time_win], dtype=np.float)
+        newdata1 = np.zeros([n_subs, nts, n_chls, time_win], dtype=np.float)
+        newdata2 = np.zeros([n_subs, nts, n_chls, time_win], dtype=np.float)
 
         for sub in range(n_subs):
             for t in range(nts):
-                newdata1[sub, t] = data1[sub, t*time_step:t*time_step+time_win]
-                newdata2[sub, t] = data2[sub, t*time_step:t*time_step+time_win]
+                for chl in range(n_chls):
+                    newdata1[sub, t, chl] = data1[sub, chl, t*time_step:t*time_step+time_win]
+                    newdata2[sub, t, chl] = data2[sub, chl, t*time_step:t*time_step+time_win]
+
+        newdata1 = np.reshape(newdata1, [n_subs, nts, n_chls*time_win])
+        newdata2 = np.reshape(newdata2, [n_subs, nts, n_chls*time_win])
 
         CTSimilarities = np.zeros([n_subs, nts, nts, 2], dtype=np.float)
 
