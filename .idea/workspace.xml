@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2383ab4-1816-4649-acb6-030e0919c134" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/build/lib/pyctrsa/ctrdm/multi_cal.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/pyctrsa/ctrdm/multi_cal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/pyctrsa/ctsimilarity/normaldatabased.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/pyctrsa/ctsimilarity/normaldatabased.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyctrsa.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/pyctrsa.egg-info/PKG-INFO" afterDir="false" />
-    </list>
+    <list default="true" id="e2383ab4-1816-4649-acb6-030e0919c134" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,21 +36,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+            <state relative-caret-position="315">
+              <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/paper.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="165">
-                <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+              <first_editor relative-caret-position="15">
+                <caret line="1" column="110" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="110" />
               </first_editor>
               <second_editor />
             </state>
@@ -179,11 +175,6 @@
             <path>
               <item name="PyCTRSA-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="PyCTRSA-master" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyCTRSA-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyCTRSA-master" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -322,7 +313,7 @@
       <workItem from="1596341922709" duration="264000" />
       <workItem from="1596342583405" duration="1372000" />
       <workItem from="1596434134849" duration="355000" />
-      <workItem from="1604626723398" duration="8390000" />
+      <workItem from="1604626723398" duration="8655000" />
     </task>
     <servers />
   </component>
@@ -359,7 +350,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34596000" />
+    <option name="totallyTimeSpent" value="34861000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="30" y="36" width="1239" height="761" extended-state="0" />
@@ -644,20 +635,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paper.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+    <entry file="file://$PROJECT_DIR$/paper.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" column="110" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="110" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
