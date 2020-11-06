@@ -73,7 +73,7 @@ def ctsimilarities_cal(data1, data2, sub_opt=1, chl_opt=1, time_win=10, time_ste
             int((n_ts-time_win)/time_step)+1]
     """
 
-    n_cons, n_subs, n_chls, n_ts = np.shape(data1)
+    n_subs, n_chls, n_ts = np.shape(data1)
 
     nts = int((n_ts - time_win) / time_step) + 1
 
@@ -151,11 +151,11 @@ def ctsimilarities_cal(data1, data2, sub_opt=1, chl_opt=1, time_win=10, time_ste
                     for t2 in range(nts):
 
                         if method == 'spearman':
-                            CTSimilarities[sub, chl, t1, t2] = spearmanr(newdata1[sub, t1], newdata2[sub, t2])
+                            CTSimilarities[sub, chl, t1, t2] = spearmanr(newdata1[sub, chl, t1], newdata2[sub, chl, t2])
                         if method == 'pearson':
-                            CTSimilarities[sub, chl, t1, t2] = pearsonr(newdata1[sub, t1], newdata2[sub, t2])
+                            CTSimilarities[sub, chl, t1, t2] = pearsonr(newdata1[sub, chl, t1], newdata2[sub, chl, t2])
                         if method == 'kendall':
-                            CTSimilarities[sub, chl, t1, t2] = kendalltau(newdata1[sub, t1], newdata2[sub, t2])
+                            CTSimilarities[sub, chl, t1, t2] = kendalltau(newdata1[sub, chl, t1], newdata2[sub, chl, t2])
                         if method == 'similarity':
                             V1 = np.mat(newdata1[sub, chl, t1])
                             V2 = np.mat(newdata2[sub, chl, t2])

@@ -47,8 +47,12 @@ def ctrdms_cal(data, sub_opt=1, chl_opt=1, time_win=10, time_step=5):
 
     Returns
     -------
-    CTRDMs : array [int((n_ts-time_win)/time_step)+1, int((n_ts-time_win)/time_step)+1, n_conditions, n_conditions]
+    CTRDMs : array
         Cross-Temporal RDMs.
+        if chl_opt=1, the shape of CTRDMs is [n_subs, n_chls, int((n_ts-time_win)/time_step)+1,
+        int((n_ts-time_win)/time_step)+1, n_cons, n_cons]
+        if chl_opt=0, the shape of CTRDMs is [n_subs, int((n_ts-time_win)/time_step)+1,
+        int((n_ts-time_win)/time_step)+1, n_cons, n_cons]
     """
 
     n_cons, n_subs, n_chls, n_ts = np.shape(data)

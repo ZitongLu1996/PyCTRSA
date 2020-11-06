@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2383ab4-1816-4649-acb6-030e0919c134" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/paper.bib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paper.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/pyctrsa/ctrdm/multi_cal.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/pyctrsa/ctrdm/multi_cal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/pyctrsa/ctsimilarity/normaldatabased.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/pyctrsa/ctsimilarity/normaldatabased.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyctrsa.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/pyctrsa.egg-info/PKG-INFO" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +40,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
@@ -53,19 +53,19 @@
         <entry file="file://$PROJECT_DIR$/paper.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="216">
-                <caret line="29" column="293" selection-start-line="29" selection-start-column="293" selection-end-line="29" selection-end-column="303" />
+              <first_editor relative-caret-position="165">
+                <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/paper.bib">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+            <state relative-caret-position="249">
+              <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -156,8 +156,8 @@
         <option value="$PROJECT_DIR$/test/t_pearsonrp.py" />
         <option value="$PROJECT_DIR$/test/t_spearmanrp.py" />
         <option value="$PROJECT_DIR$/setup.py" />
-        <option value="$PROJECT_DIR$/paper.md" />
         <option value="$PROJECT_DIR$/paper.bib" />
+        <option value="$PROJECT_DIR$/paper.md" />
       </list>
     </option>
   </component>
@@ -322,7 +322,7 @@
       <workItem from="1596341922709" duration="264000" />
       <workItem from="1596342583405" duration="1372000" />
       <workItem from="1596434134849" duration="355000" />
-      <workItem from="1604626723398" duration="8109000" />
+      <workItem from="1604626723398" duration="8390000" />
     </task>
     <servers />
   </component>
@@ -359,18 +359,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34315000" />
+    <option name="totallyTimeSpent" value="34596000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="30" y="36" width="1239" height="761" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28070176" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28070176" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32884902" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32884902" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -637,27 +637,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
+    <entry file="file://$PROJECT_DIR$/paper.bib">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        <state relative-caret-position="249">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/paper.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="216">
-            <caret line="29" column="293" selection-start-line="29" selection-start-column="293" selection-end-line="29" selection-end-column="303" />
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paper.bib">
+    <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+        <state relative-caret-position="165">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
         </state>
       </provider>
     </entry>
