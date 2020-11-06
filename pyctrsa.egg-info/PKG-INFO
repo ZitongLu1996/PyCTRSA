@@ -1,0 +1,27 @@
+Metadata-Version: 1.2
+Name: pyctrsa
+Version: 0.0.8
+Summary: A Python Toolbox for Cross-Temporal Representational Similarity Analysis-based Decoding on E/MEG Data
+Home-page: https://github.com/ZitongLu1996/PyCTRSA
+Author: Zitong Lu
+Author-email: zitonglu1996@gmail.com
+Maintainer: Zitong Lu
+Maintainer-email: zitonglu1996@gmail.com
+License: MIT License
+Description: # PyCTRSA
+        A Python toolbox for Cross-Temporal Representation Similarity Analysis on EEG/MEG data
+        
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
