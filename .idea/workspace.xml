@@ -153,34 +153,6 @@
               <item name="PyCTRSA-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="PyCTRSA-master" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="PyCTRSA-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyCTRSA-master" type="462c0819:PsiDirectoryNode" />
-              <item name="pyctrsa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyCTRSA-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyCTRSA-master" type="462c0819:PsiDirectoryNode" />
-              <item name="pyctrsa" type="462c0819:PsiDirectoryNode" />
-              <item name="ctrdm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyCTRSA-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyCTRSA-master" type="462c0819:PsiDirectoryNode" />
-              <item name="pyctrsa" type="462c0819:PsiDirectoryNode" />
-              <item name="ctsimilarity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyCTRSA-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyCTRSA-master" type="462c0819:PsiDirectoryNode" />
-              <item name="pyctrsa" type="462c0819:PsiDirectoryNode" />
-              <item name="similarity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyCTRSA-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyCTRSA-master" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -318,7 +290,7 @@
       <workItem from="1596341922709" duration="264000" />
       <workItem from="1596342583405" duration="1372000" />
       <workItem from="1596434134849" duration="355000" />
-      <workItem from="1604626723398" duration="4124000" />
+      <workItem from="1604626723398" duration="4608000" />
     </task>
     <servers />
   </component>
@@ -355,18 +327,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30330000" />
+    <option name="totallyTimeSpent" value="30814000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="41" y="23" width="1239" height="761" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28070176" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28070176" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32884902" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32884902" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
