@@ -8,6 +8,10 @@
 ## Download
 > pip install pyctrsa
 
+## Citation
+
+Lu, Zitong. (2020, November 14). PyCTRSA: A Python package for cross-temporal representational similarity analysis-based E/MEG decoding (Version 0.1.0). Zenodo. http://doi.org/10.5281/zenodo.4273674
+
 ## Required Dependencies
 
 - **[Numpy](https://www.numpy.org)**: a fundamental package for scientific computing.
